@@ -1,0 +1,111 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-image: url('https://i.pinimg.com/originals/a0/63/72/a06372c2466d0c8bbb778464cbf28405.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-size: 35px;
+  padding: 20px 40px;
+  width: auto;
+  border: 0;
+  border-radius: 15px;
+  color: #000000;
+  background-color: #ffffff73;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+#chatWindow {
+  height: 350px;
+  border: 3px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  width: 700px;
+  overflow-y: auto;
+  background-color: #f8f8f8;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+#output p {
+  background-color: #48ca4e;
+  font-family: 'Arial', sans-serif;
+  font-size: 20px; /* Increase the font size */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+#output p:nth-child(even) {
+  background-color: #d3d3d3;
+}
+
+#chatApp {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+input {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+button {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #48ca4e;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#recordingTimer,
+#cameraTimer {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+
+.message-container audio {
+  margin-left: 10px;
+}
+
+
+
+#startRecordingButton, #stopRecordingButton {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #4CAF50; /* a green color */
+  color: white;
+  border: none;
+}
+
+#startRecordingButton:hover, #stopRecordingButton:hover {
+  background-color: #45a049; /* a darker green */
+}
+
+#startRecordingButton:disabled, #stopRecordingButton:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
